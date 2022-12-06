@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from home.views import index, hello_json
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("", index),
+    path("assignment-1/", hello_json),
 ]
