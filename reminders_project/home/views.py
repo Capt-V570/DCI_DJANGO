@@ -7,6 +7,4 @@ def index(request):
 
 
 def hello_json(request):
-    # pass a dictionary with your name
-    # name: your name
     return JsonResponse({"name": "Fausto Ferrara"})
